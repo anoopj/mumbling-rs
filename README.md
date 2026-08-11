@@ -1,16 +1,8 @@
 # mumbling-rs
 
-A Rust implementation of the [Mumbling v1 bitmap format][spec] with a benchmark
-comparing it to [Roaring bitmaps][roaring] (with and without zstd) for small,
-bounded bitmaps.
-
-The target use case is **Iceberg V4 leaf-manifest deletion vectors**: small
-bitmaps inlined into the root manifest that mark which positions in a leaf
-manifest are deleted or replaced. These are copied on every commit, so their
-serialized size, decoded footprint, and decode speed matter directly.
+A Rust implementation of the [Mumbling v1 bitmap format][spec].
 
 [spec]: https://github.com/apache/iceberg/blob/main/format/mumbling-spec.md
-[roaring]: https://roaringbitmap.org/
 
 ## Layout
 

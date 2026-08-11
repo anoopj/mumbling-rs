@@ -8,7 +8,7 @@
 //! Each width has a specialized routine that processes eight values per group
 //! (eight values of `width` bits occupy exactly `width` bytes, so groups never
 //! straddle a byte boundary). Rather than hand-writing one routine per width,
-//! the group logic is generic over a `const W` so the compiler specializes it —
+//! the group logic is generic over a `const W` so the compiler specializes it:
 //! every shift and mask becomes a compile-time constant. Output is
 //! byte-identical to a straightforward streaming packer.
 

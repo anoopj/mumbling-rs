@@ -10,7 +10,7 @@ pub mod pfor;
 pub use mumbling::{MumblingBitmap, MumblingReader};
 
 /// A tiny deterministic PRNG (SplitMix64) used only by unit tests, so the
-/// library carries no dependencies — not even dev-dependencies.
+/// library carries no dependencies, not even dev-dependencies.
 #[cfg(test)]
 pub(crate) struct TestRng {
     state: u64,

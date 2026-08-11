@@ -271,7 +271,7 @@ fn render_table(rows: &[Row]) -> String {
 
 fn render_report(rows: &[Row]) -> String {
     let mut out = String::new();
-    writeln!(out, "# Mumbling vs Roaring — bitmap comparison\n").unwrap();
+    writeln!(out, "# Mumbling vs Roaring bitmap comparison\n").unwrap();
     writeln!(
         out,
         "Universe of {UNIVERSE} positions, fixed random bits per bitmap. Bitmaps are \

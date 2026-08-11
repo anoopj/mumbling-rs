@@ -1,0 +1,16 @@
+[package]
+name = "mumbling-bench"
+version = "0.1.0"
+edition = "2021"
+description = "Benchmark comparing Mumbling against Roaring (with and without zstd)"
+
+[[bin]]
+name = "mumbling-bench"
+path = "src/main.rs"
+
+[dependencies]
+mumbling = { path = "../mumbling" }
+roaring = "0.10"
+zstd = "0.13"
+rand = "0.8"
+rand_chacha = "0.3"

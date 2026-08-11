@@ -1,0 +1,5 @@
+/target
+.claude/
+Cargo.lock
+results.md
+FINDINGS.md

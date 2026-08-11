@@ -1,0 +1,7 @@
+[package]
+name = "mumbling"
+version = "0.1.0"
+edition = "2021"
+description = "Mumbling v1 compressed bitmap format (zero-dependency reference implementation)"
+
+[dependencies]
